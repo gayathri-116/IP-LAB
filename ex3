@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sweet Scoops - Ice Cream Shop</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffccd5; /* darker pastel pink */
+  color: #4a4a4a;
+  margin: 0;
+  text-align: center; /* center align everything */
+}
+
+/* Headings */
+h1 { color: #b03060; }
+h2 { color: #d63384; }
+
+/* Navigation bar box */
+nav {
+  margin: 20px auto;
+  width: 80%;
+  border: 2px solid #d63384; /* box border */
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ffe6ec;
+}
+nav table {
+  margin: 0 auto;
+}
+nav td {
+  padding: 10px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #b03060;
+  font-weight: bold;
+}
+a:hover { color: #800040; }
+
+/* Sections with box margins */
+section {
+  margin: 30px auto;
+  width: 80%;
+  border: 2px solid #d63384; /* box border */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffe6ec;
+  clear: both; /* ensures floats don’t overlap */
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Images */
+img {
+  border-radius: 8px;
+  margin: 10px;
+  float: none; /* keep centered */
+}
+
+/* Buttons and form controls */
+button, input[type="submit"], input[type="reset"] {
+  background-color: #ff99aa;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #d63384;
+}
+
+/* Footer */
+footer {
+  background-color: #ffb6c1;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  border-top: 2px solid #d63384;
+}
+</style>
+</head>
+<body>
+<table>
+<tr><td><h1><b>Sweet Scoops</b></h1></td></tr>
+</table>
+<hr>
+
+<!-- Navigation -->
+<nav>
+<table width="100%" border="0" cellpadding="8">
+<tr>
+<td><a href="#home">Home</a></td>
+<td><a href="#categories">Categories</a></td>
+<td><a href="#flavors">Flavors</a></td>
+<td><a href="#order">Order</a></td>
+<td><a href="#video">Video</a></td>
+<td><a href="#contact">Contact</a></td>
+</tr>
+</table>
+</nav>
+<hr>
+
+<!-- Home -->
+<section id="home">
+<h2>Welcome to Sweet Scoops</h2>
+<p>Sweet Scoops is your neighborhood Ice Cream Shop where you can view flavors,
+watch videos of our creations, listen to our jingle, locate nearby stores,
+and purchase ice cream using HTML5 form controls.</p>
+</section>
+<hr>
+
+<!-- Categories -->
+<section id="categories">
+<h2>Shop by Category</h2>
+<a href="https://baskinrobbinsindia.com/" target="_blank">
+<img src="categories.jpg" alt="Ice Cream Categories" width="700" height="300">
+</a>
+</section>
+<hr>
+
+<!-- Featured Flavors -->
+<section id="flavors">
+<h2>Featured Flavors</h2>
+<table border="1" cellpadding="30" cellspacing="5">
+<tr>
+<td><img src="vanilla.jpg" width="140" height="140"><br><b>Classic Vanilla</b></td>
+<td><img src="chocolate.jpg" width="140" height="140"><br><b>Rich Chocolate</b></td>
+<td><img src="strawberry.jpg" width="140" height="140"><br><b>Fresh Strawberry</b></td>
+</tr>
+</table>
+</section>
+<hr>
+
+<!-- Video -->
+<section id="video">
+<h2>Our Ice Cream Video</h2>
+<video width="730" height="400" controls>
+<source src="icecream.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</section>
+<hr>
+
+<!-- Audio -->
+<section>
+<h2>Sweet Scoops Jingle</h2>
+<audio controls>
+<source src="jingle.mp3" type="audio/mpeg">
+Your browser does not support audio.
+</audio>
+</section>
+<hr>
+
+<!-- Order Form -->
+<section id="order">
+<h2>Order Form</h2>
+<form>
+<table cellpadding="5" border="0">
+<tr><td>Name</td><td><input type="text" required></td></tr>
+<tr><td>Email</td><td><input type="email" required></td></tr>
+<tr><td>Phone</td><td><input type="tel"></td></tr>
+<tr><td>Product</td><td>
+<select>
+<option>Vanilla</option>
+<option>Chocolate</option>
+<option>Strawberry</option>
+<option>Mango</option>
+<option>Pistachio</option>
+</select></td></tr>
+<tr><td>Quantity</td><td><input type="number" min="1" max="10"></td></tr>
+<tr><td>Delivery Date</td><td><input type="date"></td></tr>
+<tr><td>Address</td><td><textarea rows="4" cols="25"></textarea></td></tr>
+<tr><td>Payment</td><td>
+<input type="radio" name="pay"> Cash
+<input type="radio" name="pay"> UPI
+<input type="radio" name="pay"> Card
+</td></tr>
+<tr><td colspan="2">
+<input type="submit" value="Place Order">
+<input type="reset" value="Clear">
+</td></tr>
+</table>
+</form>
+</section>
+<hr>
+
+<!-- Contact -->
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Email : support@sweetscoops.com</p>
+<p>Phone : +91 9876543210</p>
+</section>
+<hr>
+
+<!-- Footer -->
+<footer>
+<table width="100%" border="0" cellpadding="10">
+<tr><td><b>&copy; 2026 Sweet Scoops - Ice Cream Shop</b></td></tr>
+</table>
+</footer>
+</body>
+</html>
